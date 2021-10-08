@@ -27,7 +27,7 @@ async def set_location(request: web.Request):
     raise web.HTTPNoContent
 
 
-def run_app():
+def main():
     app = web.Application()
     app.add_routes(routes)
     web.run_app(app)
