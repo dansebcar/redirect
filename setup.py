@@ -1,9 +1,3 @@
-import setuptools
+import utils.setup
 
-setuptools.setup(
-    name="redirect",
-    version="0.1",
-    install_requires=["aiohttp"],
-    entry_points={"console_scripts": ["redirect=redirect:main"]},
-    packages=setuptools.find_packages(),
-)
+utils.setup.main("redirect", "0.0.1", scripts=["redirect=redirect:main"])
